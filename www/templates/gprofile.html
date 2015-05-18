@@ -1,0 +1,15 @@
+<ion-view title="Google Profile" ng-init="init()">
+    <ion-content>
+        <div class="list card">
+            <div class="item item-avatar">
+                <img ng-src="{{profileData.picture}}">
+                <h2>{{profileData.name}}</h2>
+                <p>{{profileData.id}}</p>
+            </div>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-email"></i>
+                {{profileData.email}}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

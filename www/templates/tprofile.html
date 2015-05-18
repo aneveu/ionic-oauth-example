@@ -1,0 +1,32 @@
+<ion-view title="Twitter Profile" ng-init="init()">
+    <ion-content>
+        <div class="list card">
+            <div class="item item-avatar">
+                <img ng-src="{{profileData.profile_image_url_https}}">
+                <h2>{{profileData.name}}</h2>
+                <p>{{profileData.id}}</p>
+            </div>
+            <div class="item item-icon-left">
+                <i class="icon ion-at"></i>
+                <h2>{{profileData.screen_name}}</h2>
+            </div>
+            <div class="item item-icon-left">
+                <i class="icon ion-more"></i>
+                <h2>{{profileData.description}}</h2>
+            </div>
+            <div class="item item-icon-left">
+                <i class="icon ion-location"></i>
+                <h2>{{profileData.location}}</h2>
+            </div>
+            <div class="item item-icon-left">
+                <i class="icon ion-stats-bars"></i>
+                <h2>Followers count</h2>
+                <p>{{profileData.followers_count}}</p>
+                <h2>Follows count</h2>
+                <p>{{profileData.friends_count}}</p>
+                <h2>Tweets</h2>
+                <p>{{profileData.statuses_count}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
